@@ -2,8 +2,7 @@ import boto3
 import json 
 
 # requires full admin access
-session = boto3.Session(profile_name='admin')
-client = session.client('iam')
+client = boto3.client('iam')
 
 assume_role_policy = {
     "Version": "2012-10-17",
